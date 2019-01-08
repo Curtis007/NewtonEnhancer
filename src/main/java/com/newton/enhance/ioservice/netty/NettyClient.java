@@ -9,6 +9,9 @@ import io.netty.handler.codec.string.StringEncoder;
 
 import java.util.Date;
 
+/**
+ * Netty 客户端
+ */
 public class NettyClient {
 
     public static void main(String[] args) throws InterruptedException {
@@ -23,6 +26,7 @@ public class NettyClient {
                         ch.pipeline().addLast(new StringEncoder());
                     }
                 });
+
 
         Channel channel = bootstrap.connect("127.0.0.1", 8000).channel();
 
