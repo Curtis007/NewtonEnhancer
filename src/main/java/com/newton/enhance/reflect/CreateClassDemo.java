@@ -44,7 +44,7 @@ public class CreateClassDemo {
             e.printStackTrace();
         }
 
-
+        System.out.println(Runtime.getRuntime().availableProcessors());
 
     }
 }
